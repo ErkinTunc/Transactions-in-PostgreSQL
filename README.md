@@ -64,10 +64,10 @@ Row-level explicit locks during reads/writes:
 
 ```sql
 -- Shared read lock
-SELECT ctid, * FROM produit WHERE nom='banane' FOR SHARE;
+SELECT ctid, * FROM produit WHERE nom='bananes' FOR SHARE;
 
 -- Exclusive lock for update
-SELECT ctid, * FROM produit WHERE nom='pomme' FOR UPDATE;
+SELECT ctid, * FROM produit WHERE nom='pommes' FOR UPDATE;
 ```
 
 ## How to Work the Exercises
